@@ -1,1 +1,2 @@
 Escrevendo uma linha para a tarefa 02 de git kkkkkk
+Linha alterada agora na main para dar conflito hehehe
