@@ -1,0 +1,31 @@
+Nome: Jose Francisco de Souza Fonseca
+
+Comandos: 
+
+mkdir tarefa-02-git
+cd tarefa-02-git
+git clone https://gitlab.com/mizael.cortez/curso-branchs-ifrn-ead
+git init
+touch texto.txt
+nano texto.txt
+git add .
+git commit -m "commit do arquivo texto na main"
+git checkout -b feature-1
+nano texto.txt
+git add .
+git commit -m "commit com segunda linha do arquivo txt alterada"
+git checkout main
+nano texto.txt
+git add .
+git commit -m "commit na main para dar conflito no txt"
+git merge feature-1
+nano texto.txt
+git commit -am "resolvendo o conflito do txt"
+git checkout -b add-comandos
+touch comandos.txt
+nano comandos.txt
+git add .
+git commit -m "commit dos comandos"
+git remote add origin-atividade https://github.com/Joseee-dev/tarefa-02-git.git
+git push -u origin-atividade main
+git push -u origin-atividade add-comandos
